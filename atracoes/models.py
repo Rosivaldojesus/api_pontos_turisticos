@@ -5,7 +5,7 @@ class Atracao(models.Model):
     nome= models.CharField(max_length=255)
     descricao = models.TextField()
     horario_funcionamento = models.TextField()
-    idade_minimo = models.IntegerField()
+    idade_minima = models.IntegerField()
 
     def __str__(self):
         return self.nome
