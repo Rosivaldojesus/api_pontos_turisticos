@@ -37,13 +37,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'rest_framework',
+    'rest_framework.authtoken',
+
     'core',
     'atracoes',
     'comentarios',
     'avaliacoes',
     'enderecos',
 
-    'rest_framework',
+
+
 ]
 
 MIDDLEWARE = [
@@ -125,3 +130,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#Para onde vai as imagens feitas o upload
+MEDIA_ROOT = 'imagens'
+
+MEDIA_URL = '/media/'
+
